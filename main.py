@@ -148,6 +148,7 @@ def main():
     ftpwalk(ftp, ftp_file_list, depth=1)
     for ftp_file in ftp_file_list:
         load_and_save_file(ftp, ftp_file)
+    logging.debug('The script has finished working')
 
 
 if __name__ == '__main__':
